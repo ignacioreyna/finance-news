@@ -1,4 +1,35 @@
 
+<!-- PROJECT-SPECIFIC GUIDELINES START -->
+# Finance News Agent Project Notes
+
+## Git And GitHub
+
+- Commit authors for this repo should be `ignacioreyna <iganre@gmail.com>`.
+- The SSH remote `git@github.com:ignacioreyna/finance-news.git` may authenticate with the wrong local GitHub identity in this environment.
+- `~/.ssh/config` currently has an active `github.com:ireyna-modo` host using `~/.ssh/modo`; the `github.com:ignacioreyna` host using `~/.ssh/id_personal` is commented out, and `~/.ssh/id_personal` did not authenticate against GitHub during the last push attempt.
+- For pushes, prefer the GitHub CLI HTTPS credentials, which are authenticated as `ignacioreyna`:
+
+```bash
+gh auth status
+gh auth setup-git
+git push https://github.com/ignacioreyna/finance-news.git main
+```
+
+- Before pushing, verify author/committer:
+
+```bash
+git log -1 --pretty=fuller
+```
+
+- If needed, amend the last commit author before push:
+
+```bash
+GIT_COMMITTER_NAME="ignacioreyna" GIT_COMMITTER_EMAIL="iganre@gmail.com" \
+  git commit --amend --no-edit --author="ignacioreyna <iganre@gmail.com>"
+```
+
+<!-- PROJECT-SPECIFIC GUIDELINES END -->
+
 <!-- BACKLOG.MD GUIDELINES START -->
 # Instructions for the usage of Backlog.md CLI Tool
 
