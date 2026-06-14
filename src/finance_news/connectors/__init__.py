@@ -1,5 +1,6 @@
 """Shared connector primitives."""
 
+from .bcra_comunicaciones_a import BcraComunicacionesAConnector
 from .models import (
     Connector,
     Freshness,
@@ -12,6 +13,7 @@ from .models import (
 )
 
 __all__ = [
+    "BcraComunicacionesAConnector",
     "Connector",
     "Freshness",
     "PageResult",
