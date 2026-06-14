@@ -5,6 +5,20 @@
 ## Git And GitHub
 
 - Commit authors for this repo should be `ignacioreyna <iganre@gmail.com>`.
+- This repo is configured locally with:
+
+```bash
+git config --local user.name "ignacioreyna"
+git config --local user.email "iganre@gmail.com"
+```
+
+- Future commits made from this working copy should therefore use the correct author/committer automatically. Verify with:
+
+```bash
+git var GIT_AUTHOR_IDENT
+git var GIT_COMMITTER_IDENT
+```
+
 - The SSH remote `git@github.com:ignacioreyna/finance-news.git` may authenticate with the wrong local GitHub identity in this environment.
 - `~/.ssh/config` currently has an active `github.com:ireyna-modo` host using `~/.ssh/modo`; the `github.com:ignacioreyna` host using `~/.ssh/id_personal` is commented out, and `~/.ssh/id_personal` did not authenticate against GitHub during the last push attempt.
 - For pushes, prefer the GitHub CLI HTTPS credentials, which are authenticated as `ignacioreyna`:
