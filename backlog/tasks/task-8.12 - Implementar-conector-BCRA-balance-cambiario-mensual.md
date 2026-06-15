@@ -2,8 +2,10 @@
 id: TASK-8.12
 title: Implementar conector BCRA balance cambiario mensual
 status: To Do
-assignee: []
+assignee:
+  - '@general-mid'
 created_date: '2026-06-15 02:47'
+updated_date: '2026-06-15 19:04'
 labels:
   - argentina
   - bcra
@@ -31,3 +33,9 @@ Consumir Evolucion del Mercado de Cambios y Balance Cambiario del BCRA para comp
 - [ ] #2 Incluye fixtures/tests offline para descarga machine-readable identificada
 - [ ] #3 Documenta explicitamente que no reemplaza intervencion diaria neta
 <!-- AC:END -->
+
+## Implementation Notes
+
+<!-- SECTION:NOTES:BEGIN -->
+Deferred after first attempt: live source is XLSX-only (needs openpyxl). Retry approach: lazy-import openpyxl in fetch_page (mirror the pypdf lazy-import pattern in bcra_comunicaciones_a), do NOT add openpyxl to pyproject; keep a CSV parser for offline tests; ensure parser matches its own fixture and actually run the suite.
+<!-- SECTION:NOTES:END -->
