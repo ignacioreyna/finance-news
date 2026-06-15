@@ -1,0 +1,45 @@
+{
+  "status": 200,
+  "metadata": {
+    "resultset": {
+      "count": 3,
+      "offset": 0,
+      "limit": 10
+    }
+  },
+  "results": [
+    {
+      "fecha": "2026-06-12",
+      "detalle": [
+        {
+          "codigoMoneda": "REF",
+          "descripcion": "DOLAR REFERENCIA COM 3500",
+          "tipoPase": 0.00000000,
+          "tipoCotizacion": 1430.80920000
+        }
+      ]
+    },
+    {
+      "fecha": "2026-06-11",
+      "detalle": [
+        {
+          "codigoMoneda": "REF",
+          "descripcion": "DOLAR REFERENCIA COM 3500",
+          "tipoPase": 0.00000000,
+          "tipoCotizacion": 1429.02980000
+        }
+      ]
+    },
+    {
+      "fecha": "2026-06-10",
+      "detalle": [
+        {
+          "codigoMoneda": "REF",
+          "descripcion": "DOLAR REFERENCIA COM 3500",
+          "tipoPase": 0.00000000,
+          "tipoCotizacion": 1436.58500000
+        }
+      ]
+    }
+  ]
+}
