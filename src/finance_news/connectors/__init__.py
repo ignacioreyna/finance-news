@@ -1,6 +1,9 @@
 """Shared connector primitives."""
 
+from .bcra_catalogo import BcraCatalogoConnector
 from .bcra_comunicaciones_a import BcraComunicacionesAConnector
+from .bcra_dolar_oficial import BcraDolarOficialConnector
+from .bcra_tasas_cer_tamar import BcraTasasCerTamarConnector
 from .bora_financial import BoraFinancialConnector
 from .models import (
     Connector,
@@ -15,7 +18,10 @@ from .models import (
 
 # Connector registry: name -> connector class
 _CONNECTORS: dict[str, type[Connector]] = {
+    "bcra_catalogo": BcraCatalogoConnector,
     "bcra_comunicaciones_a": BcraComunicacionesAConnector,
+    "bcra_dolar_oficial": BcraDolarOficialConnector,
+    "bcra_tasas_cer_tamar": BcraTasasCerTamarConnector,
     "bora_financial": BoraFinancialConnector,
 }
 
@@ -41,7 +47,10 @@ def get_connector(name: str) -> type[Connector]:
 
 
 __all__ = [
+    "BcraCatalogoConnector",
     "BcraComunicacionesAConnector",
+    "BcraDolarOficialConnector",
+    "BcraTasasCerTamarConnector",
     "BoraFinancialConnector",
     "Connector",
     "Freshness",
