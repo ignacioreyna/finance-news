@@ -4,7 +4,9 @@ from .bcra_catalogo import BcraCatalogoConnector
 from .bcra_comunicaciones_a import BcraComunicacionesAConnector
 from .bcra_dolar_oficial import BcraDolarOficialConnector
 from .bcra_tasas_cer_tamar import BcraTasasCerTamarConnector
+from .bcra_variables_reservas import BcraVariablesReservasConnector
 from .bora_financial import BoraFinancialConnector
+from .indec_ipc import IndecIpcConnector
 from .models import (
     Connector,
     Freshness,
@@ -22,7 +24,9 @@ _CONNECTORS: dict[str, type[Connector]] = {
     "bcra_comunicaciones_a": BcraComunicacionesAConnector,
     "bcra_dolar_oficial": BcraDolarOficialConnector,
     "bcra_tasas_cer_tamar": BcraTasasCerTamarConnector,
+    "bcra_variables_reservas": BcraVariablesReservasConnector,
     "bora_financial": BoraFinancialConnector,
+    "indec_ipc": IndecIpcConnector,
 }
 
 
@@ -51,9 +55,11 @@ __all__ = [
     "BcraComunicacionesAConnector",
     "BcraDolarOficialConnector",
     "BcraTasasCerTamarConnector",
+    "BcraVariablesReservasConnector",
     "BoraFinancialConnector",
     "Connector",
     "Freshness",
+    "IndecIpcConnector",
     "PageResult",
     "Provenance",
     "RateLimitPolicy",
