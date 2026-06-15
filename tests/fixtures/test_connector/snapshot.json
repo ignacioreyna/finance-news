@@ -1,0 +1,32 @@
+{
+    "external_id": "test-001",
+    "source": "test",
+    "published_at": "2024-06-15T12:00:00+00:00",
+    "title": "Test Snapshot",
+    "body": null,
+    "summary": null,
+    "url": "https://example.com/test-001",
+    "metadata": {
+        "key1": "value1",
+        "key2": "value2"
+    },
+    "provenance": {
+        "connector": "test_connector",
+        "source": "test",
+        "fetch_url": "https://example.com/api/test-001",
+        "canonical_url": "https://example.com/test-001",
+        "cursor": "test-001",
+        "fetched_at": "2024-06-15T13:00:00+00:00",
+        "parser_version": "1.0.0",
+        "transport_metadata": {
+            "status_code": 200
+        }
+    },
+    "freshness": {
+        "published_at": "2024-06-15T12:00:00+00:00",
+        "first_seen_at": "2024-06-15T13:00:00+00:00",
+        "fetched_at": "2024-06-15T13:00:00+00:00",
+        "is_stale": false,
+        "ttl_seconds": 3600
+    }
+}
