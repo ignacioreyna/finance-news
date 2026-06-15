@@ -1,0 +1,192 @@
+# Versioned configuration for sources and series
+#
+# Environment variable placeholders are used for sensitive information:
+# - ${BCRA_API_TOKEN}: BCRA API token
+# - ${FRED_API_KEY}: Federal Reserve Economic Data API key
+# - ${TREASURY_DTS_TOKEN}: US Treasury DTS access token
+#
+# Set these environment variables before running the pipeline.
+
+version = "1.0"
+
+[sources]
+
+[sources.bcra]
+connector = "finance_news.connectors.bcra:BCRAConnector"
+base_url = "https://api.bcra.gob.ar"
+frequency = "daily"
+freshness = { ttl_seconds = 86400, freshness_tolerance_seconds = 86400 }
+priority = "alta"
+category = "primary"
+enabled = true
+
+[sources.indec]
+connector = "finance_news.connectors.indec:INDECConnector"
+base_url = "https://www.indec.gob.ar"
+frequency = "monthly"
+freshness = { ttl_seconds = 2592000, freshness_tolerance_seconds = 864000 }
+priority = "alta"
+category = "primary"
+enabled = true
+
+[sources.tesoro]
+connector = "finance_news.connectors.tesoro:TesoroConnector"
+base_url = "https://www.economia.gob.ar"
+frequency = "weekly"
+freshness = { ttl_seconds = 604800, freshness_tolerance_seconds = 1209600 }
+priority = "alta"
+category = "primary"
+enabled = true
+
+[sources.datos_gob_ar]
+connector = "finance_news.connectors.datos_gob_ar:DatosGobArConnector"
+base_url = "https://datos.gob.ar"
+frequency = "daily"
+freshness = { ttl_seconds = 86400, freshness_tolerance_seconds = 172800 }
+priority = "alta"
+category = "primary"
+enabled = true
+
+[sources.fomc]
+connector = "finance_news.connectors.fomc:FOMCConnector"
+base_url = "https://www.federalreserve.gov"
+frequency = "eventual"
+freshness = { ttl_seconds = 3600, freshness_tolerance_seconds = 21600 }
+priority = "alta"
+category = "primary"
+enabled = true
+
+[sources.bls]
+connector = "finance_news.connectors.bls:BLSConnector"
+base_url = "https://www.bls.gov"
+frequency = "weekly"
+freshness = { ttl_seconds = 604800, freshness_tolerance_seconds = 1209600 }
+priority = "alta"
+category = "primary"
+enabled = true
+
+[sources.bea]
+connector = "finance_news.connectors.bea:BEAConnector"
+base_url = "https://www.bea.gov"
+frequency = "monthly"
+freshness = { ttl_seconds = 2592000, freshness_tolerance_seconds = 864000 }
+priority = "alta"
+category = "primary"
+enabled = true
+
+[sources.treasury_dts]
+connector = "finance_news.connectors.treasury_dts:TreasuryDTSConnector"
+base_url = "https://fiscaldata.treasury.gov"
+frequency = "daily"
+freshness = { ttl_seconds = 86400, freshness_tolerance_seconds = 172800 }
+priority = "alta"
+category = "primary"
+enabled = true
+
+[sources.ny_fed]
+connector = "finance_news.connectors.ny_fed:NyFedConnector"
+base_url = "https://www.newyorkfed.org"
+frequency = "weekly"
+freshness = { ttl_seconds = 604800, freshness_tolerance_seconds = 1209600 }
+priority = "media"
+category = "primary"
+enabled = true
+
+[sources.fred]
+connector = "finance_news.connectors.fred:FREDConnector"
+base_url = "https://fred.stlouisfed.org"
+frequency = "daily"
+freshness = { ttl_seconds = 86400, freshness_tolerance_seconds = 172800 }
+priority = "media"
+category = "primary"
+enabled = true
+
+[sources.eia]
+connector = "finance_news.connectors.eia:EIAConnector"
+base_url = "https://www.eia.gov"
+frequency = "weekly"
+freshness = { ttl_seconds = 604800, freshness_tolerance_seconds = 1209600 }
+priority = "alta"
+category = "primary"
+enabled = true
+
+[sources.cleveland_fed]
+connector = "finance_news.connectors.cleveland_fed:ClevelandFedConnector"
+base_url = "https://www.clevelandfed.org"
+frequency = "daily"
+freshness = { ttl_seconds = 86400, freshness_tolerance_seconds = 172800 }
+priority = "media"
+category = "primary"
+enabled = true
+
+[sources.bloomberg_markets]
+connector = "finance_news.connectors.bloomberg:BloombergMarketsConnector"
+base_url = "https://www.bloomberg.com/markets"
+frequency = "daily"
+freshness = { ttl_seconds = 3600, freshness_tolerance_seconds = 7200 }
+priority = "media"
+category = "proxy"
+enabled = true
+
+[sources.reuters_markets]
+connector = "finance_news.connectors.reuters:ReutersMarketsConnector"
+base_url = "https://www.reuters.com/markets"
+frequency = "daily"
+freshness = { ttl_seconds = 3600, freshness_tolerance_seconds = 7200 }
+priority = "media"
+category = "proxy"
+enabled = true
+
+[sources.risk_country_jp_morgan]
+connector = "finance_news.connectors.manual:ManualConnector"
+base_url = "https://www.markets.jpmorgan.com"
+frequency = "daily"
+freshness = { ttl_seconds = 86400, freshness_tolerance_seconds = 172800 }
+priority = "alta"
+category = "manual"
+enabled = true
+
+[sources.bma_byma]
+connector = "finance_news.connectors.manual:ManualConnector"
+base_url = "https://www.byma.com.ar"
+frequency = "daily"
+freshness = { ttl_seconds = 86400, freshness_tolerance_seconds = 172800 }
+priority = "alta"
+category = "manual"
+enabled = true
+
+[sources.opc]
+connector = "finance_news.connectors.manual:ManualConnector"
+base_url = "https://www.opc.gob.ar"
+frequency = "monthly"
+freshness = { ttl_seconds = 2592000, freshness_tolerance_seconds = 864000 }
+priority = "media"
+category = "manual"
+enabled = true
+
+[series]
+
+[series.bcra_reservas]
+source_id = "bcra"
+path = "/estadisticas/v2/reservas"
+filters = { currency = "usd" }
+
+[series.bcra_tipo_cambio]
+source_id = "bcra"
+path = "/estadisticas/v2/tipos_cambio"
+filters = { type = "oficial" }
+
+[series.indec_ipc]
+source_id = "indec"
+path = "/estadisticas/ipc"
+filters = { index = "general" }
+
+[series.fomc_minutes]
+source_id = "fomc"
+path = "/newsevents/pressreleases/monetary"
+filters = { document_type = "minutes" }
+
+[series.bls_payrolls]
+source_id = "bls"
+path = "/news.release/empsit"
+filters = { report_type = "employment" }
