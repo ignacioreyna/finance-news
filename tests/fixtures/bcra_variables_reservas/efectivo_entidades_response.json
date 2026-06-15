@@ -1,0 +1,29 @@
+{
+    "status": 200,
+    "metadata": {
+        "resultset": {
+            "count": 10428,
+            "offset": 0,
+            "limit": 3
+        }
+    },
+    "results": [
+        {
+            "idVariable": 18,
+            "detalle": [
+                {
+                    "fecha": "2026-06-10",
+                    "valor": 1981476.0
+                },
+                {
+                    "fecha": "2026-06-09",
+                    "valor": 2046578.0
+                },
+                {
+                    "fecha": "2026-06-08",
+                    "valor": 2023270.0
+                }
+            ]
+        }
+    ]
+}
