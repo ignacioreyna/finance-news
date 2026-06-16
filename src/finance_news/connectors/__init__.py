@@ -1,12 +1,16 @@
 """Shared connector primitives."""
 
+from .bcra_calendario import BcraCalendarioConnector
 from .bcra_catalogo import BcraCatalogoConnector
 from .bcra_comunicaciones_a import BcraComunicacionesAConnector
 from .bcra_dolar_oficial import BcraDolarOficialConnector
 from .bcra_tasas_cer_tamar import BcraTasasCerTamarConnector
 from .bcra_variables_reservas import BcraVariablesReservasConnector
 from .bora_financial import BoraFinancialConnector
+from .datosgobar_fiscal import DatosgobarFiscalConnector
+from .indec_calendario import IndecCalendarioConnector
 from .indec_ipc import IndecIpcConnector
+from .tesoro_licitaciones import TesoroLicitacionesConnector
 from .models import (
     Connector,
     Freshness,
@@ -20,13 +24,17 @@ from .models import (
 
 # Connector registry: name -> connector class
 _CONNECTORS: dict[str, type[Connector]] = {
+    "bcra_calendario": BcraCalendarioConnector,
     "bcra_catalogo": BcraCatalogoConnector,
     "bcra_comunicaciones_a": BcraComunicacionesAConnector,
     "bcra_dolar_oficial": BcraDolarOficialConnector,
     "bcra_tasas_cer_tamar": BcraTasasCerTamarConnector,
     "bcra_variables_reservas": BcraVariablesReservasConnector,
     "bora_financial": BoraFinancialConnector,
+    "datosgobar_fiscal": DatosgobarFiscalConnector,
+    "indec_calendario": IndecCalendarioConnector,
     "indec_ipc": IndecIpcConnector,
+    "tesoro_licitaciones": TesoroLicitacionesConnector,
 }
 
 
@@ -51,6 +59,7 @@ def get_connector(name: str) -> type[Connector]:
 
 
 __all__ = [
+    "BcraCalendarioConnector",
     "BcraCatalogoConnector",
     "BcraComunicacionesAConnector",
     "BcraDolarOficialConnector",
@@ -58,7 +67,9 @@ __all__ = [
     "BcraVariablesReservasConnector",
     "BoraFinancialConnector",
     "Connector",
+    "DatosgobarFiscalConnector",
     "Freshness",
+    "IndecCalendarioConnector",
     "IndecIpcConnector",
     "PageResult",
     "Provenance",
@@ -66,6 +77,7 @@ __all__ = [
     "RecoverableConnectorError",
     "RetryPolicy",
     "SourceItem",
+    "TesoroLicitacionesConnector",
     "available_connectors",
     "get_connector",
 ]
