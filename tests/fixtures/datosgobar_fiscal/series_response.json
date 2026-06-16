@@ -1,0 +1,57 @@
+{
+  "data": [
+    ["2016-01-01", 740.7000000000553],
+    ["2016-02-01", -16642.40999999999],
+    ["2016-03-01", -30012.10000000001]
+  ],
+  "count": 3,
+  "meta": [
+    {
+      "frequency": "month",
+      "start_date": "2016-01-01",
+      "end_date": "2016-03-01"
+    }
+  ],
+  "params": {
+    "ids": "452.3_RESULTADO_RIO_0_M_18_54",
+    "format": "json",
+    "limit": "3"
+  },
+  "identifiers": [
+    {
+      "id": "452.3_RESULTADO_RIO_0_M_18_54",
+      "distribution": "452.3",
+      "dataset": "452"
+    }
+  ],
+  "catalog": {
+    "title": "Datos Programación Macroeconómica",
+    "publisher": {
+      "mbox": "datos@economia.gob.ar",
+      "name": "Ministerio de Economía",
+      "uid": "MIN_ECON"
+    },
+    "modified": "2024-06-15",
+    "language": [
+      "es"
+    ],
+    "license": "CC-BY-4.0"
+  },
+  "dataset": {
+    "title": "Informe Mensual de Ingresos y Gastos del Sector Público Nacional No Financiero (IMIG)",
+    "description": "Informe Mensual de Ingresos y Gastos del Sector Público Nacional No Financiero",
+    "issued": "2019-06-06",
+    "source": "Secretaría de Hacienda, Ministerio de Economía"
+  },
+  "distribution": {
+    "title": "Informe Mensual de Ingresos y Gastos. Sector Público Nacional No Financiero. Valores mensuales 2015-2018",
+    "downloadURL": "https://infra.datos.gob.ar/catalog/sspm/dataset/452/distribution/452.3/download/imig-mensual.csv"
+  },
+  "field": {
+    "description": "IMIG. Resultado primario",
+    "id": "452.3_RESULTADO_RIO_0_M_18_54",
+    "units": "Millones de pesos",
+    "representation_mode": "value",
+    "representation_mode_units": "Millones de pesos"
+  }
+}
