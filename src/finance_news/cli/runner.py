@@ -16,6 +16,7 @@ from pathlib import Path
 from finance_news.connectors import available_connectors, get_connector
 from finance_news.connectors._http import AsyncHttpTransport, HttpRequest, HttpResponse
 from finance_news.connectors.models import RecoverableConnectorError
+from finance_news.settings import load_env
 from finance_news.storage.local import LocalStorage
 from finance_news.testing import fixtures
 
@@ -225,6 +226,7 @@ def list_connectors() -> None:
 
 def main() -> None:
     """CLI entry point."""
+    load_env()
     parser = argparse.ArgumentParser(description="Finance-news connector runner")
     subparsers = parser.add_subparsers(dest="command", help="Subcommands")
 
