@@ -305,15 +305,18 @@ class TestLoadEnvMissingFile(unittest.TestCase):
         # No exception should be raised
 
     def test_missing_path_none_returns_empty_dict(self):
-        """Test that path=None with missing default .env returns empty dict."""
-        # Create temp dir without .env file
-        old_cwd = os.getcwd()
-        try:
-            os.chdir(self.temp_dir.name)
+        """Test that path=None with missing default .env returns empty dict.
+
+        The default path is resolved from the package location (get_repo_root),
+        not from cwd, so patch get_repo_root to a temp dir with no .env to keep
+        this hermetic regardless of whether the real repo has a .env.
+        """
+        from unittest.mock import patch
+
+        temp_root = Path(self.temp_dir.name)
+        with patch("finance_news.settings.get_repo_root", return_value=temp_root):
             result = load_env(None)
-            self.assertEqual(result, {})
-        finally:
-            os.chdir(old_cwd)
+        self.assertEqual(result, {})
 
 
 class TestLoadEnvValidation(unittest.TestCase):
