@@ -1,9 +1,11 @@
 ---
 id: TASK-9.1
 title: Implementar conector calendario FOMC
-status: To Do
-assignee: []
+status: In Progress
+assignee:
+  - '@general-mid'
 created_date: '2026-06-15 02:44'
+updated_date: '2026-06-17 12:31'
 labels:
   - international
   - fed
