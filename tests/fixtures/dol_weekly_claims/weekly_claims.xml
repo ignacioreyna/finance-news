@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dol_weekly_claims>
+  <metadata>
+    <source>U.S. Department of Labor - Employment and Training Administration</source>
+    <publication_date>2025-06-14</publication_date>
+    <description>Weekly unemployment insurance claims data</description>
+  </metadata>
+  <weekly_data>
+    <observation>
+      <series_type>initial</series_type>
+      <week_ending>2025-06-07</week_ending>
+      <value>233000</value>
+      <prior_week_revised>229000</prior_week_revised>
+      <seasonally_adjusted>true</seasonally_adjusted>
+    </observation>
+    <observation>
+      <series_type>continued</series_type>
+      <week_ending>2025-06-07</week_ending>
+      <value>1843000</value>
+      <prior_week_revised>1835000</prior_week_revised>
+      <seasonally_adjusted>true</seasonally_adjusted>
+    </observation>
+  </weekly_data>
+</dol_weekly_claims>
