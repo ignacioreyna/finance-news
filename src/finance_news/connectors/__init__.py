@@ -9,9 +9,12 @@ from .bcra_tasas_cer_tamar import BcraTasasCerTamarConnector
 from .bcra_variables_reservas import BcraVariablesReservasConnector
 from .bora_financial import BoraFinancialConnector
 from .datosgobar_fiscal import DatosgobarFiscalConnector
+from .dol_weekly_claims import DolWeeklyClaimsConnector
 from .indec_calendario import IndecCalendarioConnector
 from .indec_ipc import IndecIpcConnector
+from .nyfed_sofr import NyfedSofrConnector
 from .tesoro_licitaciones import TesoroLicitacionesConnector
+from .treasury_dts_tga import TreasuryDtsTgaConnector
 from .models import (
     Connector,
     Freshness,
@@ -34,9 +37,12 @@ _CONNECTORS: dict[str, type[Connector]] = {
     "bcra_variables_reservas": BcraVariablesReservasConnector,
     "bora_financial": BoraFinancialConnector,
     "datosgobar_fiscal": DatosgobarFiscalConnector,
+    "dol_weekly_claims": DolWeeklyClaimsConnector,
     "indec_calendario": IndecCalendarioConnector,
     "indec_ipc": IndecIpcConnector,
+    "nyfed_sofr": NyfedSofrConnector,
     "tesoro_licitaciones": TesoroLicitacionesConnector,
+    "treasury_dts_tga": TreasuryDtsTgaConnector,
 }
 
 
@@ -71,9 +77,11 @@ __all__ = [
     "BoraFinancialConnector",
     "Connector",
     "DatosgobarFiscalConnector",
+    "DolWeeklyClaimsConnector",
     "Freshness",
     "IndecCalendarioConnector",
     "IndecIpcConnector",
+    "NyfedSofrConnector",
     "PageResult",
     "Provenance",
     "RateLimitPolicy",
@@ -81,6 +89,7 @@ __all__ = [
     "RetryPolicy",
     "SourceItem",
     "TesoroLicitacionesConnector",
+    "TreasuryDtsTgaConnector",
     "available_connectors",
     "get_connector",
 ]
