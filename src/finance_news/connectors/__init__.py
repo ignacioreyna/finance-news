@@ -10,6 +10,7 @@ from .bcra_variables_reservas import BcraVariablesReservasConnector
 from .bora_financial import BoraFinancialConnector
 from .datosgobar_fiscal import DatosgobarFiscalConnector
 from .dol_weekly_claims import DolWeeklyClaimsConnector
+from .fomc_calendario import FomcCalendarioConnector
 from .indec_calendario import IndecCalendarioConnector
 from .indec_ipc import IndecIpcConnector
 from .nyfed_sofr import NyfedSofrConnector
@@ -38,6 +39,7 @@ _CONNECTORS: dict[str, type[Connector]] = {
     "bora_financial": BoraFinancialConnector,
     "datosgobar_fiscal": DatosgobarFiscalConnector,
     "dol_weekly_claims": DolWeeklyClaimsConnector,
+    "fomc_calendario": FomcCalendarioConnector,
     "indec_calendario": IndecCalendarioConnector,
     "indec_ipc": IndecIpcConnector,
     "nyfed_sofr": NyfedSofrConnector,
@@ -78,6 +80,7 @@ __all__ = [
     "Connector",
     "DatosgobarFiscalConnector",
     "DolWeeklyClaimsConnector",
+    "FomcCalendarioConnector",
     "Freshness",
     "IndecCalendarioConnector",
     "IndecIpcConnector",
