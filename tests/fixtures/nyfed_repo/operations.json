@@ -1,0 +1,36 @@
+{
+  "repoOperations": [
+    {
+      "operationDate": "2026-06-16",
+      "operationType": "ON_RRP",
+      "amountSubmitted": 0.0,
+      "amountAccepted": 1205.6,
+      "awardRate": 5.30,
+      "numberCounterparties": 96
+    },
+    {
+      "operationDate": "2026-06-15",
+      "operationType": "ON_RRP",
+      "amountSubmitted": 0.0,
+      "amountAccepted": 1198.3,
+      "awardRate": 5.30,
+      "numberCounterparties": 95
+    },
+    {
+      "operationDate": "2026-06-16",
+      "operationType": "SRF_REPO",
+      "amountSubmitted": 125.0,
+      "amountAccepted": 45.0,
+      "awardRate": 5.25,
+      "numberCounterparties": 12
+    },
+    {
+      "operationDate": "2026-06-15",
+      "operationType": "SRF_REPO",
+      "amountSubmitted": 100.0,
+      "amountAccepted": 38.5,
+      "awardRate": 5.25,
+      "numberCounterparties": 10
+    }
+  ]
+}
