@@ -1,0 +1,8 @@
+{
+  "status": "REQUEST_NOT_PROCESSED",
+  "responseTime": 25,
+  "message": [
+    "Series NOT_FOUND for seriesid: INVALID_SERIES_ID_12345"
+  ],
+  "Results": {}
+}
