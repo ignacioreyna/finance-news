@@ -1,0 +1,95 @@
+{
+  "status": "REQUEST_SUCCEEDED",
+  "responseTime": 150,
+  "message": [],
+  "Results": {
+    "series": [
+      {
+        "seriesID": "CUSR0000SA0",
+        "data": [
+          {
+            "year": "2026",
+            "period": "M05",
+            "periodName": "May",
+            "value": "317.123",
+            "footnotes": [
+              {
+                "code": "P",
+                "text": "Preliminary"
+              }
+            ]
+          },
+          {
+            "year": "2026",
+            "period": "M04",
+            "periodName": "April",
+            "value": "316.456",
+            "footnotes": []
+          },
+          {
+            "year": "2026",
+            "period": "M03",
+            "periodName": "March",
+            "value": "315.789",
+            "footnotes": []
+          }
+        ]
+      },
+      {
+        "seriesID": "LNS14000000",
+        "data": [
+          {
+            "year": "2026",
+            "period": "M05",
+            "periodName": "May",
+            "value": "4.0",
+            "footnotes": [
+              {
+                "code": "P",
+                "text": "Preliminary"
+              }
+            ]
+          },
+          {
+            "year": "2026",
+            "period": "M04",
+            "periodName": "April",
+            "value": "3.9",
+            "footnotes": []
+          },
+          {
+            "year": "2026",
+            "period": "M03",
+            "periodName": "March",
+            "value": "3.8",
+            "footnotes": []
+          }
+        ]
+      },
+      {
+        "seriesID": "CES0000000001",
+        "data": [
+          {
+            "year": "2026",
+            "period": "M05",
+            "periodName": "May",
+            "value": "150000.5",
+            "footnotes": [
+              {
+                "code": "P",
+                "text": "Preliminary"
+              }
+            ]
+          },
+          {
+            "year": "2026",
+            "period": "M04",
+            "periodName": "April",
+            "value": "149876.2",
+            "footnotes": []
+          }
+        ]
+      }
+    ]
+  }
+}
