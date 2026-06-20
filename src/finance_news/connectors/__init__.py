@@ -10,11 +10,15 @@ from .bcra_variables_reservas import BcraVariablesReservasConnector
 from .bora_financial import BoraFinancialConnector
 from .datosgobar_fiscal import DatosgobarFiscalConnector
 from .dol_weekly_claims import DolWeeklyClaimsConnector
+from .fed_h41_liquidity import FedH41LiquidityConnector
 from .fomc_calendario import FomcCalendarioConnector
+from .fomc_statements import FomcStatementsConnector
 from .indec_calendario import IndecCalendarioConnector
 from .indec_ipc import IndecIpcConnector
+from .nyfed_repo import NyfedRepoConnector
 from .nyfed_sofr import NyfedSofrConnector
 from .tesoro_licitaciones import TesoroLicitacionesConnector
+from .treasury_dts_cashflows import TreasuryDtsCashflowsConnector
 from .treasury_dts_tga import TreasuryDtsTgaConnector
 from .models import (
     Connector,
@@ -39,11 +43,15 @@ _CONNECTORS: dict[str, type[Connector]] = {
     "bora_financial": BoraFinancialConnector,
     "datosgobar_fiscal": DatosgobarFiscalConnector,
     "dol_weekly_claims": DolWeeklyClaimsConnector,
+    "fed_h41_liquidity": FedH41LiquidityConnector,
     "fomc_calendario": FomcCalendarioConnector,
+    "fomc_statements": FomcStatementsConnector,
     "indec_calendario": IndecCalendarioConnector,
     "indec_ipc": IndecIpcConnector,
+    "nyfed_repo": NyfedRepoConnector,
     "nyfed_sofr": NyfedSofrConnector,
     "tesoro_licitaciones": TesoroLicitacionesConnector,
+    "treasury_dts_cashflows": TreasuryDtsCashflowsConnector,
     "treasury_dts_tga": TreasuryDtsTgaConnector,
 }
 
@@ -80,10 +88,13 @@ __all__ = [
     "Connector",
     "DatosgobarFiscalConnector",
     "DolWeeklyClaimsConnector",
+    "FedH41LiquidityConnector",
     "FomcCalendarioConnector",
+    "FomcStatementsConnector",
     "Freshness",
     "IndecCalendarioConnector",
     "IndecIpcConnector",
+    "NyfedRepoConnector",
     "NyfedSofrConnector",
     "PageResult",
     "Provenance",
@@ -92,6 +103,7 @@ __all__ = [
     "RetryPolicy",
     "SourceItem",
     "TesoroLicitacionesConnector",
+    "TreasuryDtsCashflowsConnector",
     "TreasuryDtsTgaConnector",
     "available_connectors",
     "get_connector",
