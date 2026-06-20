@@ -1,9 +1,11 @@
 ---
 id: TASK-9.18
 title: Implementar conector NY Fed repo y reverse repo
-status: To Do
-assignee: []
+status: Done
+assignee:
+  - '@general-mid'
 created_date: '2026-06-15 02:49'
+updated_date: '2026-06-20 13:19'
 labels:
   - international
   - nyfed
@@ -27,7 +29,13 @@ Consumir operaciones repo/reverse repo de NY Fed para montos aceptados, tasas y 
 
 ## Acceptance Criteria
 <!-- AC:BEGIN -->
-- [ ] #1 El conector devuelve operaciones normalizadas con fecha, tipo, monto, tasa, participantes si existen y fuente
-- [ ] #2 Incluye fixtures/tests offline para pagina/API/archivo historico
-- [ ] #3 Distingue ON RRP de repo/SRF y marca fuente primaria
+- [x] #1 El conector devuelve operaciones normalizadas con fecha, tipo, monto, tasa, participantes si existen y fuente
+- [x] #2 Incluye fixtures/tests offline para pagina/API/archivo historico
+- [x] #3 Distingue ON RRP de repo/SRF y marca fuente primaria
 <!-- AC:END -->
+
+## Final Summary
+
+<!-- SECTION:FINAL_SUMMARY:BEGIN -->
+Added NY Fed repo connector (nyfed_repo) consuming NY Fed Markets operations for ON RRP and SRF (standing repo facility) into normalized operations with operation_date, type (on_rrp/srf_repo), total amount accepted, award rate, counterparty count when published, fuente. AC#3: distinguishes on_rrp vs srf_repo via operation_type field and marks NY Fed as DATA_CLASSIFICATION=primary - covered by test. Hand-crafted JSON fixture (both op types) + offline tests (389->417). Registered centrally.
+<!-- SECTION:FINAL_SUMMARY:END -->

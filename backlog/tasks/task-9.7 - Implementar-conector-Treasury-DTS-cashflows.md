@@ -1,9 +1,11 @@
 ---
 id: TASK-9.7
 title: Implementar conector Treasury DTS cashflows
-status: To Do
-assignee: []
+status: Done
+assignee:
+  - '@general-mid'
 created_date: '2026-06-15 02:45'
+updated_date: '2026-06-20 13:19'
 labels:
   - international
   - treasury
@@ -26,7 +28,13 @@ Consumir FiscalData deposits_withdrawals_operating_cash para explicar movimiento
 
 ## Acceptance Criteria
 <!-- AC:BEGIN -->
-- [ ] #1 El conector devuelve flujos diarios por categoria con fecha, tipo, monto y fuente
-- [ ] #2 Incluye fixtures/tests offline para JSON FiscalData
-- [ ] #3 Permite agregado semanal por categoria sin mezclar deposits y withdrawals
+- [x] #1 El conector devuelve flujos diarios por categoria con fecha, tipo, monto y fuente
+- [x] #2 Incluye fixtures/tests offline para JSON FiscalData
+- [x] #3 Permite agregado semanal por categoria sin mezclar deposits y withdrawals
 <!-- AC:END -->
+
+## Final Summary
+
+<!-- SECTION:FINAL_SUMMARY:BEGIN -->
+Added Treasury DTS cashflows connector (treasury_dts_cashflows) consuming FiscalData deposits_withdrawals_operating_cash into daily flows per category (record_date, transaction_type deposits/withdrawals, transaction_catg, amount_millions, fuente). AC#3: aggregate_cashflows_weekly_by_category() groups by ISO week and category keeping deposits and withdrawals SEPARATE (never netted) - covered by test. Hand-crafted FiscalData JSON fixture (10 obs) + offline tests (389->410). Registered centrally.
+<!-- SECTION:FINAL_SUMMARY:END -->
