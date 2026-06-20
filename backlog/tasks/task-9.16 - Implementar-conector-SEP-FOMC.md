@@ -1,9 +1,11 @@
 ---
 id: TASK-9.16
 title: Implementar conector SEP FOMC
-status: To Do
-assignee: []
+status: Done
+assignee:
+  - '@general-mid'
 created_date: '2026-06-15 02:48'
+updated_date: '2026-06-20 18:50'
 labels:
   - international
   - fed
@@ -28,7 +30,13 @@ Consumir projection materials en reuniones FOMC con SEP y extraer medianas de GD
 
 ## Acceptance Criteria
 <!-- AC:BEGIN -->
-- [ ] #1 El conector identifica reuniones con SEP y devuelve proyecciones normalizadas por variable/horizonte
-- [ ] #2 Incluye fixtures/tests offline para material SEP representativo
-- [ ] #3 Marca limitaciones si dots/dispersión requieren parsing manual o PDF complejo
+- [x] #1 El conector identifica reuniones con SEP y devuelve proyecciones normalizadas por variable/horizonte
+- [x] #2 Incluye fixtures/tests offline para material SEP representativo
+- [x] #3 Marca limitaciones si dots/dispersión requieren parsing manual o PDF complejo
 <!-- AC:END -->
+
+## Final Summary
+
+<!-- SECTION:FINAL_SUMMARY:BEGIN -->
+Added FOMC SEP connector (fomc_sep) parsing SEP projection materials (CSV medians table for reliability) into normalized projections keyed by variable (GDP/unemployment/PCE/core PCE/fed funds) x horizon (current year/+1/+2/longer-run): 20 projections per SEP meeting, grouped into one SourceItem per meeting with has_sep flag. AC#3: DOTS_LIMITATION module constant documents that individual participant dots/dispersion (dot plot) require manual/complex PDF parsing and are NOT extracted here - only the medians table; covered by test. Hand-crafted CSV fixture + 31 offline tests (486->517). Registered centrally.
+<!-- SECTION:FINAL_SUMMARY:END -->
