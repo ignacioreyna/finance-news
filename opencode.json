@@ -6,6 +6,9 @@
       "./scripts/backlog.sh": "allow",
       "./scripts/finance-news.sh *": "allow",
       "./scripts/finance-news.sh": "allow"
+    },
+    "external_directory": {
+      "/Users/ignacioreyna/PERSONAL/finance-news-worktrees/**": "allow"
     }
   }
 }
