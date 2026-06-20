@@ -1,0 +1,6 @@
+week_ending,release_date,crude_stocks_mmbbl,cushing_stocks_mmbbl,gasoline_stocks_mmbbl,distillate_stocks_mmbbl,production_thousand_bpd,refinery_utilization_pct,product_supplied_total_thousand_bpd
+2024-05-31,2024-06-05,445.2,34.8,231.5,112.3,13150,92.5,20500
+2024-05-24,2024-05-29,438.7,32.1,228.9,115.8,13020,91.8,20350
+2024-05-17,2024-05-22,435.1,30.5,226.3,118.2,12980,90.9,20200
+2024-05-10,2024-05-15,440.8,33.2,229.7,114.5,13100,92.1,20420
+2024-05-03,2024-05-08,442.3,34.5,232.1,113.1,13050,91.5,20380
