@@ -1,0 +1,94 @@
+{
+  "announcedSecurities": [
+    {
+      "securityType": "Note",
+      "cusip": "91282CAZ5",
+      "auctionDate": "2026-06-22",
+      "issueDate": "2026-06-30",
+      "maturityDate": "2028-06-30",
+      "offeringAmount": 54000,
+      "securityTerm": "2-Year"
+    },
+    {
+      "securityType": "Bill",
+      "cusip": "912797KZ0",
+      "auctionDate": "2026-06-23",
+      "issueDate": "2026-06-26",
+      "maturityDate": "2026-09-25",
+      "offeringAmount": 75000,
+      "securityTerm": "13-Week"
+    },
+    {
+      "securityType": "Bond",
+      "cusip": "912810SL7",
+      "auctionDate": "2026-06-24",
+      "issueDate": "2026-06-30",
+      "maturityDate": "2056-05-15",
+      "offeringAmount": 22000,
+      "securityTerm": "30-Year"
+    }
+  ],
+  "auctionedSecurities": [
+    {
+      "securityType": "Note",
+      "cusip": "91282CAX8",
+      "auctionDate": "2026-06-15",
+      "issueDate": "2026-06-22",
+      "maturityDate": "2028-06-30",
+      "offeringAmount": 54000,
+      "acceptedAmount": 54000,
+      "highRate": 4.65,
+      "lowRate": 4.62,
+      "medianRate": 4.635,
+      "bidToCoverRatio": 2.45,
+      "percentAwardsAtHigh": 18.5,
+      "securityTerm": "2-Year"
+    },
+    {
+      "securityType": "Bill",
+      "cusip": "912797KY8",
+      "auctionDate": "2026-06-14",
+      "issueDate": "2026-06-17",
+      "maturityDate": "2026-09-15",
+      "offeringAmount": 75000,
+      "acceptedAmount": 75000,
+      "highRate": 5.23,
+      "lowRate": 5.21,
+      "medianRate": 5.22,
+      "bidToCoverRatio": 2.75,
+      "percentAwardsAtHigh": 42.3,
+      "securityTerm": "13-Week"
+    },
+    {
+      "securityType": "TIPS",
+      "cusip": "912828Z45",
+      "auctionDate": "2026-06-13",
+      "issueDate": "2026-06-30",
+      "maturityDate": "2034-07-15",
+      "offeringAmount": 18000,
+      "acceptedAmount": 18000,
+      "highRate": 1.875,
+      "lowRate": 1.825,
+      "medianRate": 1.85,
+      "bidToCoverRatio": 2.15,
+      "percentAwardsAtHigh": 15.7,
+      "securityTerm": "10-Year"
+    },
+    {
+      "securityType": "Note",
+      "cusip": "91282CBY2",
+      "auctionDate": "2026-06-12",
+      "issueDate": "2026-06-15",
+      "maturityDate": "2026-12-15",
+      "offeringAmount": 65000,
+      "acceptedAmount": 65000,
+      "highRate": 5.42,
+      "lowRate": 5.39,
+      "medianRate": 5.405,
+      "bidToCoverRatio": 2.88,
+      "percentAwardsAtHigh": 25.1,
+      "securityTerm": "6-Month",
+      "isRefunding": true
+    }
+  ]
+}
