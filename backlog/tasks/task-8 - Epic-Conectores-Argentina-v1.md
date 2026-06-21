@@ -1,9 +1,10 @@
 ---
 id: TASK-8
 title: 'Epic: Conectores Argentina v1'
-status: To Do
+status: Done
 assignee: []
 created_date: '2026-06-15 02:42'
+updated_date: '2026-06-20 23:57'
 labels:
   - epic
   - argentina
@@ -20,3 +21,9 @@ ordinal: 31000
 <!-- SECTION:DESCRIPTION:BEGIN -->
 Implementar la primera capa productiva de conectores argentinos a partir de los research docs ya cerrados: BCRA, INDEC, Tesoro y mercado local. Esta epica debe priorizar fuentes oficiales y fixtures offline antes de integraciones con red.
 <!-- SECTION:DESCRIPTION:END -->
+
+## Final Summary
+
+<!-- SECTION:FINAL_SUMMARY:BEGIN -->
+Epic complete: all Argentina connectors and research merged. 12 AR connectors registered (bcra_balance_cambiario, bcra_calendario, bcra_catalogo, bcra_comunicaciones_a, bcra_dolar_oficial, bcra_tasas_cer_tamar, bcra_variables_reservas, bora_financial, datosgobar_fiscal, indec_calendario, indec_ipc, tesoro_licitaciones) + 4 analysis docs (indec/tesoro schemas, arg_market access+methodology). BYMA confirmed paid; free alternatives documented.
+<!-- SECTION:FINAL_SUMMARY:END -->
