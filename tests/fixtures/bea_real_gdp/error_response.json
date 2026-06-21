@@ -1,0 +1,10 @@
+{
+  "BEAAPI": {
+    "Results": {
+      "Error": {
+        "APIErrorCode": "404",
+        "APIErrorDescription": "Table not found or invalid parameters"
+      }
+    }
+  }
+}
