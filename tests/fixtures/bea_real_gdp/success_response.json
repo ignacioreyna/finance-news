@@ -1,0 +1,46 @@
+{
+  "BEAAPI": {
+    "Results": {
+      "Data": [
+        {
+          "TimePeriod": "2025Q1",
+          "DataValue": "2.1",
+          "CL_UNIT": "Percent",
+          "LineNumber": "1",
+          "LineDescription": "Gross domestic product (seasonally adjusted annual rate)",
+          "NoteRef": "0"
+        },
+        {
+          "TimePeriod": "2024Q4",
+          "DataValue": "3.4",
+          "CL_UNIT": "Percent",
+          "LineNumber": "1",
+          "LineDescription": "Gross domestic product (seasonally adjusted annual rate)",
+          "NoteRef": "0"
+        },
+        {
+          "TimePeriod": "2024Q3",
+          "DataValue": "4.9",
+          "CL_UNIT": "Percent",
+          "LineNumber": "1",
+          "LineDescription": "Gross domestic product (seasonally adjusted annual rate)",
+          "NoteRef": "0"
+        },
+        {
+          "TimePeriod": "2024Q2",
+          "DataValue": "2.1",
+          "CL_UNIT": "Percent",
+          "LineNumber": "1",
+          "LineDescription": "Gross domestic product (seasonally adjusted annual rate)",
+          "NoteRef": "0"
+        }
+      ],
+      "Notes": [
+        {
+          "NoteRef": "0",
+          "NoteText": "Seasonally adjusted annual rates"
+        }
+      ]
+    }
+  }
+}
