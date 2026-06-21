@@ -1,0 +1,58 @@
+{
+  "BEAAPI": {
+    "Results": {
+      "Data": [
+        {
+          "TableName": "T20600",
+          "SeriesCode": "A069RC",
+          "LineNumber": "1",
+          "LineDescription": "Personal income",
+          "TimePeriod": "2026M05",
+          "DataValue": "21500.5",
+          "CL_UNIT": "Billions of Dollars",
+          "UNIT_NUM": "3"
+        },
+        {
+          "TableName": "T20600",
+          "SeriesCode": "A069RC",
+          "LineNumber": "1",
+          "LineDescription": "Personal income",
+          "TimePeriod": "2026M04",
+          "DataValue": "21450.2",
+          "CL_UNIT": "Billions of Dollars",
+          "UNIT_NUM": "3"
+        },
+        {
+          "TableName": "T20600",
+          "SeriesCode": "A069RC",
+          "LineNumber": "1",
+          "LineDescription": "Personal income",
+          "TimePeriod": "2026M03",
+          "DataValue": "21400.8",
+          "CL_UNIT": "Billions of Dollars",
+          "UNIT_NUM": "3"
+        },
+        {
+          "TableName": "T20600",
+          "SeriesCode": "W198RC1",
+          "LineNumber": "2",
+          "LineDescription": "Wages and salaries",
+          "TimePeriod": "2026M05",
+          "DataValue": "12500.3",
+          "CL_UNIT": "Billions of Dollars",
+          "UNIT_NUM": "3"
+        },
+        {
+          "TableName": "T20600",
+          "SeriesCode": "W198RC1",
+          "LineNumber": "2",
+          "LineDescription": "Wages and salaries",
+          "TimePeriod": "2026M04",
+          "DataValue": "12480.7",
+          "CL_UNIT": "Billions of Dollars",
+          "UNIT_NUM": "3"
+        }
+      ]
+    }
+  }
+}
