@@ -7,6 +7,8 @@ from .bcra_comunicaciones_a import BcraComunicacionesAConnector
 from .bcra_dolar_oficial import BcraDolarOficialConnector
 from .bcra_tasas_cer_tamar import BcraTasasCerTamarConnector
 from .bcra_variables_reservas import BcraVariablesReservasConnector
+from .bea_personal_income import BeaPersonalIncomeConnector
+from .bea_real_gdp import BeaRealGdpConnector
 from .bls_timeseries import BlsTimeseriesConnector
 from .bora_financial import BoraFinancialConnector
 from .datosgobar_fiscal import DatosgobarFiscalConnector
@@ -28,6 +30,7 @@ from .opec_eventos import OpecEventosConnector
 from .tesoro_licitaciones import TesoroLicitacionesConnector
 from .treasury_dts_cashflows import TreasuryDtsCashflowsConnector
 from .treasury_dts_tga import TreasuryDtsTgaConnector
+from .treasurydirect_auctions import TreasurydirectAuctionsConnector
 from .models import (
     Connector,
     Freshness,
@@ -48,6 +51,8 @@ _CONNECTORS: dict[str, type[Connector]] = {
     "bcra_dolar_oficial": BcraDolarOficialConnector,
     "bcra_tasas_cer_tamar": BcraTasasCerTamarConnector,
     "bcra_variables_reservas": BcraVariablesReservasConnector,
+    "bea_personal_income": BeaPersonalIncomeConnector,
+    "bea_real_gdp": BeaRealGdpConnector,
     "bls_timeseries": BlsTimeseriesConnector,
     "bora_financial": BoraFinancialConnector,
     "datosgobar_fiscal": DatosgobarFiscalConnector,
@@ -69,6 +74,7 @@ _CONNECTORS: dict[str, type[Connector]] = {
     "tesoro_licitaciones": TesoroLicitacionesConnector,
     "treasury_dts_cashflows": TreasuryDtsCashflowsConnector,
     "treasury_dts_tga": TreasuryDtsTgaConnector,
+    "treasurydirect_auctions": TreasurydirectAuctionsConnector,
 }
 
 
@@ -100,6 +106,8 @@ __all__ = [
     "BcraDolarOficialConnector",
     "BcraTasasCerTamarConnector",
     "BcraVariablesReservasConnector",
+    "BeaPersonalIncomeConnector",
+    "BeaRealGdpConnector",
     "BlsTimeseriesConnector",
     "BoraFinancialConnector",
     "Connector",
@@ -129,6 +137,7 @@ __all__ = [
     "TesoroLicitacionesConnector",
     "TreasuryDtsCashflowsConnector",
     "TreasuryDtsTgaConnector",
+    "TreasurydirectAuctionsConnector",
     "available_connectors",
     "get_connector",
 ]
